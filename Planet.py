@@ -2,7 +2,7 @@ import pygame
 
 class Planets(pygame.sprite.Sprite):
 
-    def __init__(self, colour, width, height, speed
+    def __init__(self, colour, width, height, speed):
                  super().__init__()
 
                  self.image = pygame.Surface([width, height])
