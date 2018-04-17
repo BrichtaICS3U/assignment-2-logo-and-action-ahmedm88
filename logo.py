@@ -1,6 +1,6 @@
 # ICS3U
 # Assignment 2: Logo
-# <your name>
+# <Ahmed M>
 
 # adapted from http://www.101computing.net/getting-started-with-pygame/
 
@@ -13,12 +13,12 @@ pygame.init()
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 GREEN = (0, 255, 0)
-RED = (255, 0, 0)
+RED = (240, 0, 0)
 LBLUE = (157, 186, 232) #Light Blue, Background
 
 # Set the screen size (please don't change this)
-SCREENWIDTH = 400
-SCREENHEIGHT = 400
+SCREENWIDTH = 852
+SCREENHEIGHT = 480
 
 # Open a new window
 # The window is defined as (width, height), measured in pixels

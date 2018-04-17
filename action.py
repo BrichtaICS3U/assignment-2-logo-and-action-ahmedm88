@@ -1,6 +1,6 @@
 # ICS3U
 # Assignment 2: Action
-# <your name>
+# <Ahmed M>
 
 # adapted from http://www.101computing.net/getting-started-with-pygame/
 
@@ -8,7 +8,7 @@
 # Don't forget to import your class
 import pygame
 pygame.init()
-
+background = pygame.image.load("image.jpg")
 # Define some colours
 # Colours are defined using RGB values
 BLACK = (0, 0, 0)
@@ -17,14 +17,14 @@ GREEN = (0, 255, 0)
 RED = (255, 0, 0)
 
 # Set the screen size
-SCREENWIDTH = 400
-SCREENHEIGHT = 400
+SCREENWIDTH = 800
+SCREENHEIGHT = 569
 
 # Open a new window
 # The window is defined as (width, height), measured in pixels
 size = (SCREENWIDTH, SCREENHEIGHT)
 screen = pygame.display.set_mode(size)
-pygame.display.set_caption("My Animation")
+pygame.display.set_caption("Ahmed M's")
 
 # This loop will continue until the user exits the game
 carryOn = True
@@ -33,6 +33,7 @@ carryOn = True
 clock = pygame.time.Clock()
 
 #---------Main Program Loop----------
+screen.blit(background, (0, 0))
 while carryOn:
     # --- Main event loop ---
     for event in pygame.event.get(): # Player did something
@@ -45,7 +46,7 @@ while carryOn:
     # --- Draw code goes here
 
     # Clear the screen to white
-    screen.fill(WHITE)
+    #screen.fill(WHITE)
 
     # Queue different shapes and lines to be drawn
     # pygame.draw.rect(screen, RED, [55, 200, 100, 70], 0)
