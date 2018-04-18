@@ -27,6 +27,7 @@ SCREENHEIGHT = 569
 # The window is defined as (width, height), measured in pixels
 size = (SCREENWIDTH, SCREENHEIGHT)
 screen = pygame.display.set_mode(size)
+<<<<<<< HEAD
 pygame.display.set_caption("Ahmed M's Animation")
 
 all_sprites_list = pygame.sprite.Group()
@@ -38,6 +39,9 @@ playerPlanet.rect.y = 235
 planets1 = Planets(BLUE, 60, 80, random.randint(50,100))
 planets1.rect.x = 600
 planets1.rect.y = 200
+=======
+pygame.display.set_caption("Ahmed M's animation")
+>>>>>>> 1c75e4c17cbdc6e69c13d3428149341db476cb13
 
 planets2 = Planets(RED, 60, 80, random.randint(50,100))
 planets2.rect.x = 200
