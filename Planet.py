@@ -1,11 +1,14 @@
 import pygame
+WHITE = (255, 255, 255)
 
 class Planets(pygame.sprite.Sprite):
 
-    def __init__(self, colour, width, height, speed
+    def __init__(self, colour, width, height, speed):
                  super().__init__()
 
                  self.image = pygame.Surface([width, height])
+                 self.image.fill(WHITE)
+                 self.image.set_colorkey(WHITE)
 
                  self.width = width
                  self.height = height
@@ -14,4 +17,11 @@ class Planets(pygame.sprite.Sprite):
 
                  pygame.draw.ellipse(self.image, self.colour, [0, 0, self.width, self.height])
 
-                 self.ellipse = self.image.get_ellipse()
+                 self.rect = self.image.get_rect()
+
+                 
+    def moveRight(self, pixels):
+        self.rect.x += pixels
+ 
+    def moveLeft(self, pixels):
+        self.rect.x -= pixels
